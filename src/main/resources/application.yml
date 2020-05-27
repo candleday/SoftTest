@@ -1,0 +1,16 @@
+spring:
+  application:
+  name: demo
+  datasource:
+    username: root
+    password: candle
+    url: jdbc:mysql://127.0.0.1:3306/student
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.test05.entity
+
+server:
+  port: 8888
